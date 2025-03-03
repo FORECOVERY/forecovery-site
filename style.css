@@ -118,12 +118,13 @@ nav .navbar .menu .nav-donate .nav-donate-container span {
 @media (max-width: 768px) {
   nav .navbar {
     padding: 0 10px;
+
   }
 
   nav .navbar .logo img {
-    height: 150px;
-    /* Reduce logo size */
-    width: 180px;
+    height: 170px;
+    width: auto;
+    padding: 2px;
   }
 
   /* Hide the menu by default */
@@ -135,8 +136,10 @@ nav .navbar .menu .nav-donate .nav-donate-container span {
     /* Adjust based on navbar height */
     left: 0;
     width: 100%;
-    background: rgba(0, 56, 68, 0.9);
+    background: rgba(1, 25, 30, 0.937);
     padding: 20px 0;
+
+
   }
 
   /* Show the menu when active */
@@ -147,7 +150,9 @@ nav .navbar .menu .nav-donate .nav-donate-container span {
   .navbar .menu li {
     margin: 10px 0;
     padding: 10px;
-    text-align: center;
+    text-align: left;
+
+
   }
 
   .navbar .menu li a {
@@ -155,9 +160,13 @@ nav .navbar .menu .nav-donate .nav-donate-container span {
     /* Reduce font size for mobile */
   }
 
+  .navbar .menu .nav-donate {
+    width: 200px;
+    display: none;
+  }
+
   .navbar .menu .nav-donate .nav-donate-container {
-    width: 100%;
-    /* Full width for donate button */
+    width: 80px;
     margin: 10px auto;
   }
 
@@ -169,6 +178,12 @@ nav .navbar .menu .nav-donate .nav-donate-container span {
   /* Show Hamburger Menu Icon */
   .hamburger {
     display: flex;
+    /* margin-left: -200px; */
+    margin-left: 5px;
+  }
+
+  .hamburger span {
+    /* margin-left: -600px; */
   }
 
   /* Transform Hamburger into Close Icon */
@@ -221,8 +236,9 @@ section {
 
 }
 
-
-
+#meet-the-team {
+  height: 1300px;
+}
 
 
 
@@ -299,7 +315,7 @@ section {
 /* Mobile styles */
 @media (max-width: 768px) {
   #Home {
-    height: 80vh;
+    height: 600px;
     background-image: url(./images/homeimage1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -383,6 +399,7 @@ section {
     margin-bottom: 50px;
     padding: 20px 13px;
     font-weight: 600;
+    height: 730px;
 
   }
 
@@ -1438,9 +1455,13 @@ section {
   }
 }
 
+@media (max-width: 768px) {
+  #meet-the-team {
 
+    height: 1400px;
+  }
 
-
+}
 
 
 
@@ -1598,11 +1619,28 @@ section {
 
 
 
+#contact-text {
+  height: 400px;
+  width: 100%;
+  margin-top: 95px;
+  background-color: #ffd4c6;
+  background-image: url(./images/FORE\ BM\ 4.png);
+  background-repeat: no-repeat;
+  background-position: 120%;
+}
 
+#contact-text div {
+  width: 800px;
+  word-spacing: 27px;
+  padding: 60px;
+  margin-left: 90px;
+}
 
-
-
-
+#contact-text p {
+  font-size: 59px;
+  font-weight: 800;
+  color: #012a33;
+}
 
 .contactcontainer {
   max-width: 1100px;
