@@ -574,16 +574,27 @@ section {
   .card-list {
     display: flex;
     width: 400%;
+    /* width: 300%; */
     animation: slideMobile 20s infinite;
-    /* Automatic sliding animation */
+
   }
+
+
 
   .card-item {
     flex: 0 0 100%;
-    /* Each card takes full width */
     margin: 0;
-    /* Remove margin for mobile */
+
   }
+
+  .card-item img {
+
+    height: 100px;
+    width: 150px;
+  }
+
+
+
 
   /* Keyframes for Automatic Sliding on Mobile */
   @keyframes slideMobile {
@@ -632,7 +643,6 @@ section {
 .numbers-list {
   display: flex;
   flex-direction: row;
-
   max-width: 100%;
   /* margin: 150px auto; */
   margin-top: 40px;
