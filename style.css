@@ -1,5 +1,6 @@
 /* Google Font CDN Link */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 @font-face {
   font-family: 'extenda';
@@ -636,7 +637,7 @@ section {
   /* margin: 150px auto; */
   margin-top: 40px;
   padding: 20px;
-  padding-left: 90px;
+  padding-left: 160px;
   padding-right: 90px;
   gap: 20px;
 
@@ -650,22 +651,24 @@ section {
 
 .numbers-list .number-item .number {
 
-  font-size: 90px;
+  font-size: 70px;
   display: inline-block;
   color: #ffffff;
 
   transform: scale(1.4, 1.8);
 
-  font-family: 'extenda',
+  /* font-family: 'extenda', */
+  font-family: "Bebas Neue",
 
 
 
 }
 
 .numbers-list .number-item .number span {
-  font-size: 80px;
-  font-family: 'extenda';
-  font-weight: 900;
+  font-size: 60px;
+  /* font-family: 'extenda'; */
+  font-family: 'Bebas Neue';
+  font-weight: 400;
 }
 
 
