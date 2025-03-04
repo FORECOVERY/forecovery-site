@@ -1799,8 +1799,15 @@ section {
 }
 
 @media (max-width: 767px) {
+
+  #contactusform {
+
+    height: 1000px;
+  }
+
   #contact-text {
-    height: auto;
+    height: 400px;
+    /* height: auto; */
     margin-top: 50px;
     background-position: center;
     background-size: cover;
