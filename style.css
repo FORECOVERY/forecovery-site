@@ -240,7 +240,7 @@ section {
 }
 
 #meet-the-team {
-  height: 1300px;
+  height: 1500px;
 }
 
 
@@ -1620,6 +1620,11 @@ section {
   padding-right: 140px;
   padding-top: 80px;
   word-spacing: 15px;
+}
+
+.blog-story-image img {
+  padding-top: 120px;
+  padding-right: 20px;
 }
 
 #blog-story .blog-story-container .blog-story-details h4 {
