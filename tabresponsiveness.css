@@ -569,3 +569,29 @@ for the homepage */
         right: 15px;
     }
 }
+
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+    #blog-story .blog-story-container {
+        flex-direction: column;
+    }
+
+    #blog-story .blog-story-container .blog-story-details {
+        font-size: 20px;
+        padding: 20px;
+        text-align: center;
+    }
+
+    #blog-story .blog-story-container .blog-story-image {
+        display: none;
+    }
+
+    #blog-story .blog-story-container .blog-story-details span {
+        margin-left: 0;
+    }
+
+    #blog-story .blog-story-container .blog-story-details h4 {
+        font-size: 30px;
+    }
+}

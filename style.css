@@ -203,32 +203,6 @@ nav .navbar .menu .nav-donate .nav-donate-container span {
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 section {
 
   height: 100vh;
@@ -1643,29 +1617,6 @@ section {
   font-size: 24px;
 }
 
-
-/* Tablet responsive adjustments */
-@media (min-width: 768px) and (max-width: 991px) {
-  .blog-story-container {
-    flex-direction: column;
-  }
-
-  .blog-story-image img {
-    padding-top: 30px !important;
-    width: 100%;
-    height: auto;
-  }
-
-  .blog-story-details {
-    padding-right: 0 !important;
-  }
-}
-
-
-
-
-
-
 #blog-story .blog-story-container .blog-story-details span {
   margin-top: 20px;
   margin-left: 410px;
@@ -1693,81 +1644,155 @@ section {
 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@media (min-width: 768px) and (max-width: 991px) {
+  #blog-story .blog-story-container {
+    flex-direction: column;
+  }
+
+  #blog-story .blog-story-container .blog-story-details {
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+  }
+
+  #blog-story .blog-story-container .blog-story-image {
+    display: none;
+  }
+
+  #blog-story .blog-story-container .blog-story-details span {
+    margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #blog-story .blog-story-container {
+    flex-direction: column;
+  }
+
+  #blog-story .blog-story-container .blog-story-details {
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+  }
+
+  #blog-story .blog-story-container .blog-story-image {
+    display: none;
+  }
+
+  #blog-story .blog-story-container .blog-story-details span {
+    margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #blog-story .blog-story-container {
+    flex-direction: column;
+  }
+
+  #blog-story .blog-story-container .blog-story-details {
+    font-size: 18px;
+    padding: 20px;
+    text-align: center;
+  }
+
+  #blog-story .blog-story-container .blog-story-image {
+    display: none;
+  }
+
+  #blog-story .blog-story-container .blog-story-details span {
+    margin-left: 0;
+  }
+}
+
+
+#blog-videodisplay {}
+
+/* 
+.blog-video-container {
+  display: flex;
+}
+
+.blog-video-container .inner-blog-video-maincontainer {
+  padding: 60px;
+  flex-direction: row;
+}
+
+.blog-video-container .inner-blog-video-maincontainer iframe {
+  width: 700px;
+  height: 514px;
+}
+
+.blog-video-container .blogvid-nextbtn {
+  padding-left: 40px;
+  flex-direction: row;
+  padding-top: 370px;
+}
+
+.blog-video-container .inner-blog-video-minorcontainer {
+  padding-top: 325px;
+  flex-direction: row;
+  padding-left: 180px;
+}
+
+.blog-video-container .inner-blog-video-minorcontainer iframe {
+  width: 300px;
+  height: 250px;
+
+} */
+
+.blog-video-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+}
+
+/* Main container styles */
+.inner-blog-video-maincontainer {
+  padding: 60px;
+  /* Removed flex-direction as it's not needed on a non-flex container */
+}
+
+.inner-blog-video-maincontainer iframe {
+  width: 700px;
+  height: 514px;
+  display: block;
+  /* Ensures iframe behaves correctly */
+}
+
+/* Next button styles - position absolutely to stay consistent */
+.blogvid-nextbtn {
+  position: absolute;
+  left: 70%;
+  top: 88%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+/* Minor container styles */
+.inner-blog-video-minorcontainer {
+  padding: 325px 60px 0 100px;
+  /* Adjust padding to work better with flex layout */
+}
+
+.inner-blog-video-minorcontainer iframe {
+  width: 300px;
+  height: 250px;
+}
+
+/* Add this to maintain layout when classes are swapped */
+.blog-video-container>.inner-blog-video-maincontainer {
+  order: 1;
+  flex: 1;
+}
+
+.blog-video-container>.inner-blog-video-minorcontainer {
+  order: 3;
+}
+
+.blog-video-container>.blogvid-nextbtn {
+  order: 2;
+}
 
 
 

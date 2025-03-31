@@ -6,6 +6,7 @@
     <title>FORE UGANDA</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="blog.css">
+    <link rel="stylesheet" href="tabresponsiveness.css">
     <!-- Fontawesome CDN Link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -24,6 +25,13 @@
     <nav>
         <div class="navbar">
             <div class="logo"><a href="#"><img src="./FORE Logo 1 S Indigo BG.png" alt=""></a>
+            </div>
+
+            <!-- Hamburger Menu Icon -->
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
             <ul class="menu">
                 <li><a href="index.html">Home</a></li>
@@ -45,7 +53,6 @@
     </nav>
 
 
-
     <section id="blog-story">
         <div class="blog-story-container">
             <div class="blog-story-details">
@@ -63,8 +70,7 @@
                     odio posuere volutpat.
 
                 </p>
-                <a href="blog-details.html"><span>Read
-                        More....</span></a>
+                <a href="blog-details.html"><span>Read More....</span></a>
             </div>
             <div class="blog-story-image">
                 <img src="images/designer.jpg" alt="" height="500px" width="450px">
@@ -72,11 +78,9 @@
         </div>
     </section>
 
-    <section class="cards" style="background-color: #003844;">
-        <div class="card-list" style="display:flex; overflow: hidden;  gap: 50px; padding-top: 70px;
+    <section class="cards" style="background-color: #003844; ">
+        <div class="card-list" style="display:flex; overflow: hidden;  gap: 50px; padding-top: 130px;
         ">
-
-
             <a href="#" class="card-item  blogcarousel-item" style="background-color: #1a1818;">
                 <img src="images/editor.jpg" alt="Card Image">
 
@@ -142,38 +146,29 @@
     </section>
 
 
-    <section>
-
-        <div style="display: flex;">
-
-            <div style="padding: 60px; flex-direction: row;">
-                <iframe width="700" height="514" src="https://www.youtube.com/embed/PY9DcIMGxMs"
+    <section id="blog-videodisplay">
+        <div class="blog-video-container">
+            <div class="inner-blog-video-maincontainer">
+                <iframe src="https://www.youtube.com/embed/PY9DcIMGxMs"
                     title="Everything you think you know about addiction is wrong | Johann Hari | TED" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-
-
             </div>
 
-            <div style="padding-left:  40px; flex-direction: row; padding-top: 370px;  ">
+            <div class="blogvid-nextbtn">
                 <div>
-                    <a href=""><span>NEXT >>></span> </a>
-
+                    <button id="next-button"> <span>NEXT >>></span></button>
                 </div>
             </div>
 
-
-            <div style=" padding-top: 325px; flex-direction: row; padding-left: 180px;">
-                <iframe width="300" height="250" src="https://www.youtube.com/embed/aqXmOb_fuN4"
+            <div class="inner-blog-video-minorcontainer">
+                <iframe src="https://www.youtube.com/embed/aqXmOb_fuN4"
                     title="Misunderstanding dopamine: Why the language of addiction matters | Cyrus McCandless | TEDxPortsmouth"
                     frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
         </div>
-
-
     </section>
 
     <section>

@@ -240,4 +240,22 @@ FORE's Employee Assistance Programs (EAPs) provide comprehensive support for emp
   });
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+  const nextButton = document.getElementById("next-button");
+  const mainContainer = document.querySelector(
+    ".inner-blog-video-maincontainer"
+  );
+  const minorContainer = document.querySelector(
+    ".inner-blog-video-minorcontainer"
+  );
 
+  nextButton.addEventListener("click", function () {
+    // Toggle the classes between containers
+    [mainContainer.classList, minorContainer.classList].forEach((classList) => {
+      classList.toggle("inner-blog-video-maincontainer");
+      classList.toggle("inner-blog-video-minorcontainer");
+    });
+
+    // No need to swap DOM positions because CSS handles the layout
+  });
+});
