@@ -1110,15 +1110,16 @@ section {
   }
 
   #about-vision .vision-container h2 {
-    padding-right: 0;
+    padding-left: 150px;
     font-size: 24px;
+
   }
 
 
 }
 
 #about-mission {
-  height: 500px;
+  height: 450px;
   background-color: #f36c42;
   background-image: url(./images/finalimage1.png);
   background-repeat: no-repeat;
@@ -1126,16 +1127,16 @@ section {
 
 }
 
-
 #about-mission .mission-container {
   color: rgb(255, 255, 255);
   justify-items: right;
   font-size: 30px;
   font-weight: 300;
   padding-right: 150px;
-  padding-top: 40px;
+  padding-top: 60px;
   word-spacing: 17px;
   width: 100%;
+  text-align: right;
 }
 
 #about-mission .mission-container h2 {
@@ -1143,8 +1144,12 @@ section {
   font-weight: 500;
 }
 
-#about-mission .mission-container p {
+.mission-container span {
   width: 500px;
+  text-align: right;
+  justify-items: right;
+  padding-left: 800px;
+
 }
 
 /* Mobile styles */
@@ -1163,7 +1168,7 @@ section {
     padding-top: 20px;
     font-size: 20px;
     word-spacing: normal;
-    text-align: left;
+    text-align: right;
   }
 
   #about-mission .mission-container h2 {
@@ -1172,11 +1177,22 @@ section {
     font-size: 24px;
   }
 
-  #about-mission .mission-container p {
+  /* #about-mission .mission-container {
+    color: #003844;
+    padding-right: 160px;
+    font-size: 24px;
+    font-weight: 100;
+  } */
+
+  #about-mission .mission-container span {
     font-weight: 400;
     color: #003844;
     width: 100%;
     font-size: 20px;
+    text-align: center;
+    justify-items: center;
+    padding-right: 20px;
+    padding-left: 20px;
   }
 }
 
@@ -1665,6 +1681,9 @@ section {
 }
 
 @media only screen and (max-width: 768px) {
+  
+
+
   #blog-story .blog-story-container {
     flex-direction: column;
   }
