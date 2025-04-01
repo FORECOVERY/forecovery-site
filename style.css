@@ -1681,8 +1681,9 @@ section {
 }
 
 @media only screen and (max-width: 768px) {
-  
-
+  #blog-story {
+    height: 110vh;
+  }
 
   #blog-story .blog-story-container {
     flex-direction: column;
@@ -1725,39 +1726,6 @@ section {
 
 
 #blog-videodisplay {}
-
-/* 
-.blog-video-container {
-  display: flex;
-}
-
-.blog-video-container .inner-blog-video-maincontainer {
-  padding: 60px;
-  flex-direction: row;
-}
-
-.blog-video-container .inner-blog-video-maincontainer iframe {
-  width: 700px;
-  height: 514px;
-}
-
-.blog-video-container .blogvid-nextbtn {
-  padding-left: 40px;
-  flex-direction: row;
-  padding-top: 370px;
-}
-
-.blog-video-container .inner-blog-video-minorcontainer {
-  padding-top: 325px;
-  flex-direction: row;
-  padding-left: 180px;
-}
-
-.blog-video-container .inner-blog-video-minorcontainer iframe {
-  width: 300px;
-  height: 250px;
-
-} */
 
 .blog-video-container {
   display: flex;
@@ -1813,11 +1781,61 @@ section {
   order: 2;
 }
 
+@media (max-width: 768px) {
+  .blog-video-container {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+  }
+
+  .inner-blog-video-maincontainer {
+    padding: 20px;
+    width: 100%;
+  }
+
+  .inner-blog-video-maincontainer iframe {
+    width: 100%;
+    height: 350px;
+    aspect-ratio: 16/9;
+    /* Standard video aspect ratio */
+    max-width: 100%;
+  }
+
+  .blogvid-nextbtn {
+    position: static;
+    transform: none;
+    margin: 20px 0;
+    order: 2;
+    /* Places button between videos */
+  }
+
+  .inner-blog-video-minorcontainer {
+    padding: 20px;
+    width: 100%;
+    order: 3;
+    /* Ensures minor container comes after button */
+  }
+
+  .inner-blog-video-minorcontainer iframe {
+    width: 50%;
+    height: auto;
+    aspect-ratio: 16/9;
+    max-width: 100%;
+  }
+
+  /* Adjust button styling for mobile */
+  #next-button {
+    width: 100%;
+    padding: 12px;
+  }
+}
+
 /* Main section styles */
 .opportunities-section {
   width: 100%;
   font-family: Arial, sans-serif;
   padding: 20px 0;
+  height: 170vh;
 }
 
 .opportunities-header {
@@ -2002,103 +2020,6 @@ section {
   }
 }
 
-
-/* .opportunities-section {
-  width: 100%;
-  font-family: Arial, sans-serif;
-}
-
-.opportunities-header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 80px;
-}
-
-.opportunities-title {
-  font-size: 50px;
-  color: #f36c42;
-  margin: 0;
-}
-
-.opportunities-container {
-  display: flex;
-  padding-left: 100px;
-  gap: 50px;
-}
-
-
-.opportunity-card.featured {
-  display: flex;
-  width: 600px;
-  background-color: #ebe0ca;
-  height: 310px;
-  padding: 30px;
-  border-radius: 18px;
-  gap: 20px;
-}
-
-.card-content {
-  width: 250px;
-}
-
-.job-title {
-  font-size: 20px;
-  font-weight: 400;
-  color: #003844;
-  margin: 0;
-}
-
-.job-description {
-  padding-top: 20px;
-  margin: 0;
-  line-height: 1.4;
-}
-
-.opportunity-image {
-  width: 280px;
-  height: 250px;
-  border-radius: 15px;
-  object-fit: cover;
-}
-
-.opportunities-list {
-  width: 650px;
-}
-
-.opportunity-item {
-  display: flex;
-  background-color: #ebe0ca;
-  border-radius: 18px;
-  height: 140px;
-  width: 100%;
-  padding: 30px;
-  margin-bottom: 30px;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.item-content {
-  width: 300px;
-}
-
-.apply-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 50px;
-  width: 150px;
-  background-color: #f36c42;
-  border-radius: 30px;
-  color: white;
-  text-decoration: none;
-  font-weight: 500;
-  transition: background-color 0.3s;
-}
-
-.apply-button:hover {
-  background-color: #e05a30;
-} */
 
 #contactusform {
   align-items: center;
