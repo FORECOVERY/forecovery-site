@@ -693,6 +693,11 @@ section {
   border-radius: 50%;
 }
 
+#numbers .numbers-getinvolved {
+
+  margin-left: 600px;
+}
+
 #numbers .numbers-getinvolved .getinvolved-button {
   height: 80px;
   width: 420px;
@@ -755,10 +760,9 @@ section {
   }
 
 
-
   #numbers .numbers-getinvolved {
     width: 80px;
-    margin-left: 130px;
+    margin-left: 20px;
     border-radius: 0px;
 
   }
