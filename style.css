@@ -513,6 +513,8 @@ section {
   height: 100vh;
   width: 100vw;
 
+
+
 }
 
 #cards h2 {
@@ -523,9 +525,10 @@ section {
 }
 
 
+
 .card-list {
 
-  /* grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); */
+
   max-width: 100%;
   margin: 150px auto;
   padding: 20px;
@@ -535,6 +538,7 @@ section {
   margin-top: -10px;
   display: flex;
   flex-wrap: wrap;
+
 }
 
 .card-list .card-item {

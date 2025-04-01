@@ -2,7 +2,7 @@
 /* 
 for the homepage */
 
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 1025px) {
 
     /* ============ NAVIGATION ============ */
     nav .navbar {
@@ -268,13 +268,13 @@ for the homepage */
 
 /* the about page */
 /* Tablet Styles (768px - 991px) */
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 1025px) {
 
 
 
     /* ============ ABOUT US HERO SECTION ============ */
     #aboutus {
-        height: 140vh;
+        height: 100vh;
         background-position: center;
     }
 

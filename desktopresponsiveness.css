@@ -1,0 +1,243 @@
+/* laptops-and-desktops.css - Responsiveness for 1025px and above */
+
+/* General Styles */
+@media (min-width: 1025px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    /* Navbar */
+    nav .navbar {
+        padding: 0 50px;
+    }
+
+    nav .navbar .logo img {
+        height: 250px;
+        width: 300px;
+    }
+
+    .navbar .menu li {
+        margin: 0 15px;
+    }
+
+    .navbar .menu li a {
+        font-size: 24px;
+    }
+
+    /* Home Section */
+    #Home {
+        height: 100vh;
+    }
+
+    .home-titles {
+        top: 52%;
+        left: 10%;
+        transform: none;
+        width: auto;
+    }
+
+    .home-titles .title {
+        font-size: 70px;
+    }
+
+    .home-titles .sub_title {
+        font-size: 30px;
+    }
+
+    /* Story Section */
+    #story {
+        height: 800px;
+    }
+
+    .textstory {
+        margin-top: 100px;
+    }
+
+    .textstory h2 {
+        font-size: 60px;
+    }
+
+    .textstory .story-details {
+        font-size: 24px;
+        line-height: 1.6;
+    }
+
+    /* Cards Section */
+    #cards {
+        height: 100vh;
+    }
+
+    .card-list {
+        justify-content: center;
+        margin-top: 50px;
+    }
+
+    .card-item {
+        width: 300px;
+        height: 480px;
+    }
+
+    /* Numbers Section */
+    #numbers {
+        height: 100vh;
+    }
+
+    .numbers-list {
+        justify-content: center;
+        padding: 0 150px;
+    }
+
+    .number-item {
+        flex: 1;
+        max-width: 250px;
+    }
+
+    /* Testimonials */
+    #testimonials {
+        height: 100vh;
+    }
+
+    .carousel {
+        width: 90%;
+        max-width: 1200px;
+    }
+
+    .carousel-item {
+        padding: 40px;
+    }
+
+    .carousel-item .content p {
+        font-size: 1.5rem;
+    }
+
+    /* Blog Carousel */
+    #testimonials1 {
+        height: 500px;
+    }
+
+    .carousel1 {
+        width: 90%;
+        max-width: 1200px;
+    }
+
+    .carousel-item1 .content1 h2 {
+        font-size: 24px;
+    }
+
+    .carousel-item1 .content1 p {
+        font-size: 18px;
+    }
+
+    /* Footer */
+    .footer {
+        height: 350px;
+    }
+
+    .footer-row {
+        padding: 0 100px;
+        justify-content: space-between;
+    }
+
+    .footer-col {
+        flex: 1;
+        max-width: 30%;
+    }
+
+    .footer-col1 {
+        margin-left: 0;
+        flex: 1;
+        max-width: 30%;
+    }
+
+    /* Back to Top Button */
+    .back-to-top {
+        right: 30px;
+        bottom: 30px;
+    }
+}
+
+/* Large Desktop Styles (1440px and above) */
+@media (min-width: 1440px) {
+
+    /* Home Section */
+    .home-titles {
+        left: 15%;
+    }
+
+    .home-titles .title {
+        font-size: 80px;
+    }
+
+    .home-titles .sub_title {
+        font-size: 35px;
+    }
+
+    /* Story Section */
+    #story {
+        height: 900px;
+    }
+
+    .textstory {
+        margin-top: 120px;
+    }
+
+    /* Cards Section */
+    .card-list {
+        max-width: 1400px;
+    }
+
+    .card-item {
+        width: 320px;
+        height: 500px;
+    }
+
+    /* Numbers Section */
+    .numbers-list {
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+
+    /* Testimonials */
+    .carousel-item {
+        padding: 60px;
+    }
+
+    /* Footer */
+    .footer-row {
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+}
+
+/* Extra Large Desktop Styles (1920px and above) */
+@media (min-width: 1920px) {
+
+    /* Home Section */
+    .home-titles {
+        left: 20%;
+    }
+
+    .home-titles .title {
+        font-size: 90px;
+    }
+
+    .home-titles .sub_title {
+        font-size: 40px;
+    }
+
+    /* Story Section */
+    #story {
+        height: 1000px;
+    }
+
+    /* Cards Section */
+    .card-item {
+        width: 350px;
+        height: 520px;
+    }
+
+    /* Testimonials */
+    .carousel-item .content p {
+        font-size: 1.8rem;
+    }
+}
