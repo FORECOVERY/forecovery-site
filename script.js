@@ -259,3 +259,60 @@ document.addEventListener("DOMContentLoaded", function () {
     // No need to swap DOM positions because CSS handles the layout
   });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  // Create popup elements
+  const overlay = document.createElement("div");
+  overlay.className = "popup-overlay";
+
+  const popup = document.createElement("div");
+  popup.className = "donation-popup";
+  popup.innerHTML = `
+    <button class="popup-close">&times;</button>
+    <h3>Donation Information</h3>
+    <p><strong>GENERAL DETAILS</strong></p>
+    <p><strong>Bank Information</strong></p>
+    <ul>
+      <li><strong>Bank:</strong> Diamond Trust</li>
+      <li><strong>Account Name:</strong> Focus on Recovery (U) Ltd</li>
+      <li><strong>Account Number:</strong> 0084673001</li>
+    </ul>
+    <p><strong>Contact Information</strong></p>
+    <ul>
+      <li><strong>Phone:</strong> +256 755 083 017, +256 773 001 684</li>
+      <li><strong>Email:</strong> irecover@recoveryuganda.com</li>
+    </ul>
+  `;
+
+  // Add to DOM
+  document.body.appendChild(overlay);
+  document.body.appendChild(popup);
+
+  // Get donate button (using your existing structure)
+  const donateBtn = document.querySelector(".nav-donate-container a");
+
+  // Click handlers
+  donateBtn.addEventListener("click", function (e) {
+    e.preventDefault();
+    popup.classList.add("active");
+    overlay.classList.add("active");
+    document.body.style.overflow = "hidden";
+  });
+
+  // Close handlers
+  overlay.addEventListener("click", closePopup);
+  document.querySelector(".popup-close").addEventListener("click", closePopup);
+
+  // Close with ESC key
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape" && popup.classList.contains("active")) {
+      closePopup();
+    }
+  });
+
+  function closePopup() {
+    popup.classList.remove("active");
+    overlay.classList.remove("active");
+    document.body.style.overflow = "auto";
+  }
+});

@@ -102,7 +102,6 @@ nav .navbar .menu .nav-donate .nav-donate-container span {
   text-decoration: none;
 }
 
-/* Hamburger Menu Icon (Hidden by Default) */
 .hamburger {
   display: none;
   flex-direction: column;
@@ -115,6 +114,91 @@ nav .navbar .menu .nav-donate .nav-donate-container span {
   background: #fff;
   margin: 4px 0;
   transition: 0.3s;
+}
+
+.donation-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff9ed;
+  padding: 30px;
+  border-radius: 13px;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
+  z-index: 2000;
+  max-width: 500px;
+  width: 90%;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  border: 3px solid #f36c42;
+}
+
+.donation-popup.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.donation-popup h3 {
+  color: #003844;
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.donation-popup p {
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.donation-popup strong {
+  color: #f36c42;
+}
+
+.donation-popup ul {
+  margin: 20px 0;
+  padding-left: 20px;
+}
+
+.donation-popup li {
+  margin-bottom: 10px;
+}
+
+.popup-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 24px;
+  cursor: pointer;
+  color: #f36c42;
+  background: none;
+  border: none;
+}
+
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1999;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+.popup-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+@media (max-width: 991px) {
+  .donation-popup {
+    padding: 20px;
+  }
 }
 
 /* Mobile Styles */
@@ -695,7 +779,7 @@ section {
 
 #numbers .numbers-getinvolved {
 
-  margin-left: 600px;
+  margin-left: 550px;
 }
 
 #numbers .numbers-getinvolved .getinvolved-button {
