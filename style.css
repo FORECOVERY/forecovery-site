@@ -1782,6 +1782,8 @@ section {
 }
 
 @media (max-width: 768px) {
+
+
   .blog-video-container {
     flex-direction: column;
     align-items: center;
@@ -1806,6 +1808,7 @@ section {
     transform: none;
     margin: 20px 0;
     order: 2;
+    background-color: #003844;
     /* Places button between videos */
   }
 
@@ -1831,11 +1834,11 @@ section {
 }
 
 /* Main section styles */
-.opportunities-section {
+#opportunities-section {
   width: 100%;
   font-family: Arial, sans-serif;
   padding: 20px 0;
-  height: 170vh;
+
 }
 
 .opportunities-header {
@@ -1939,8 +1942,20 @@ section {
   background-color: #e05a30;
 }
 
+@media (max-width: 767px) {
+  #opportunities-section {
+    height: 160vh;
+  }
+
+}
+
+
+
 /* Tablet View (768px and up) */
 @media (min-width: 768px) {
+
+
+
   .opportunities-header {
     padding: 60px;
   }
