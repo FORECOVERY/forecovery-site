@@ -850,9 +850,15 @@ section {
 
   #numbers .numbers-getinvolved {
     width: 80px;
-    margin-left: 20px;
+    justify-items: right;
     border-radius: 0px;
+    margin-left: 260px;
 
+  }
+
+  #numbers .numbers-getinvolved .getinvolved-button {
+
+    width: 320px;
   }
 
   #numbers .get-involved p {
