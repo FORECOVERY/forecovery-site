@@ -871,6 +871,15 @@ section {
   margin-left: 550px;
 }
 
+@media (min-width: 1025px) and (max-width: 1200px) {
+  #numbers .numbers-getinvolved {
+
+    left: 200%;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1500px) {}
+
 #numbers .numbers-getinvolved .getinvolved-button {
   height: 80px;
   width: 420px;
