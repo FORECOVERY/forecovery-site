@@ -1185,7 +1185,13 @@ section {
   .footer-col {
     flex: 1 1 100%;
     margin-bottom: 15px;
+    margin-left: -18px;
 
+  }
+
+  .footer-col img {
+
+    margin-left: -33px;
   }
 
   .footer-col h4 {
@@ -1194,7 +1200,7 @@ section {
   }
 
   .footer-col1 {
-    margin-left: 80px;
+    margin-left: 45px;
   }
 
   .footer-col1 h4 {
