@@ -527,13 +527,16 @@ section {
     margin-bottom: 50px;
     padding: 20px 13px;
     font-weight: 600;
-    height: 680px;
+    height: 980px;
+
 
   }
 
-  #story .textstory {
+  .textstory {
     padding: 10px;
     margin-top: -27px;
+
+
   }
 
   #story .textstory .marginingmobile {
@@ -541,6 +544,12 @@ section {
     padding: 3px;
     margin-top: -35px;
     padding-left: 19px;
+
+  }
+
+  #story .textstory .marginingmobile p {
+    font-size: 23px;
+
   }
 
 
