@@ -456,7 +456,7 @@ section {
   /* Minimum height */
 
   height: 720px;
-  aspect-ratio: 16/9;
+  /* aspect-ratio: 16/9; */
   background: #ffffff;
   margin-bottom: 150px;
 
@@ -478,7 +478,7 @@ section {
 @media (min-width: 1200px) and (max-width: 1500px) {
   #story {
     height: calc(100vw / 1);
-    max-height: 1000px;
+    max-height: 850px;
 
   }
 
@@ -521,13 +521,14 @@ section {
   display: none;
 }
 
+
 /* Mobile styles */
 @media (max-width: 768px) {
   #story {
     margin-bottom: 50px;
     padding: 20px 13px;
     font-weight: 600;
-    height: 170vh;
+    height: 210vh;
   }
 
   .textstory {
