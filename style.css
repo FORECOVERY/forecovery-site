@@ -194,6 +194,44 @@ nav .navbar .menu .nav-donate .nav-donate-container span {
   visibility: visible;
 }
 
+@media (min-width: 1025px) and (max-width: 1200px) {
+
+  /* ============ NAVIGATION ============ */
+  nav .navbar {
+    padding: 0 20px;
+
+  }
+
+  nav .navbar .logo img {
+    height: 200px;
+    width: auto;
+    margin-left: -70px;
+  }
+
+  nav .navbar .menu {
+    display: flex;
+    position: static;
+    width: auto;
+    background: transparent;
+    padding: 0;
+  }
+
+  .navbar .menu li {
+    margin: 0 10px;
+    padding: 5px;
+  }
+
+  .navbar .menu li a {
+    font-size: 22px;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+
+}
+
 
 @media (max-width: 991px) {
   .donation-popup {
@@ -330,6 +368,7 @@ section {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  aspect-ratio: 16/9;
 
 
 }
@@ -411,11 +450,46 @@ section {
   background-size: cover, auto, auto;
   background-repeat: no-repeat, repeat-y, repeat-y;
   background-position: center, right, left;
+  /* height: calc(100vw / 1); */
+  /* aspect-ratio: 1/0.5; */
+  /* min-height: 700px; */
+  /* Minimum height */
 
   height: 720px;
+  aspect-ratio: 16/9;
   background: #ffffff;
   margin-bottom: 150px;
 
+
+}
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+  #story {
+    height: calc(100vw / 1);
+
+  }
+
+  .textstory {
+    text-align: center;
+    margin-left: -100px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1500px) {
+  #story {
+    height: calc(100vw / 1);
+    max-height: 1000px;
+
+  }
+
+  .textstory .marginingmobile {
+    margin-left: -190px;
+  }
+
+  .textstory {
+    text-align: center;
+    margin-left: -100px;
+  }
 }
 
 .textstory {
@@ -515,6 +589,17 @@ section {
 
 
 
+}
+
+@media (min-width: 1025px) and (max-width: 1500px) {
+  #cards {
+    height: calc(100vw / 0.8);
+    max-height: 1200px;
+  }
+
+  .card-list .card-item {
+    margin-bottom: 50px;
+  }
 }
 
 #cards h2 {
@@ -795,7 +880,41 @@ section {
   border-radius: 15px;
 }
 
+@media (min-width: 1025px) and (max-width: 1500px) {
 
+  #numbers {
+    height: auto;
+    padding: 50px 0;
+  }
+
+  #numbers h1 {
+    font-size: 42px;
+    padding: 20px;
+  }
+
+  .numbers-list {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 20px;
+  }
+
+  .number-item {
+    width: 50%;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .numbers-getinvolved {
+    text-align: center;
+    margin-top: 20px;
+
+  }
+
+  #numbers .numbers-getinvolved {
+    margin-left: 310px;
+
+  }
+}
 
 
 
@@ -1026,6 +1145,21 @@ section {
   color: #fff;
 }
 
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .footer-col1 {
+    margin-left: -300px;
+  }
+
+}
+
+@media (min-width: 1025px) and (max-width: 1400px) {
+  .footer-col1 {
+    margin-left: -200px;
+  }
+
+}
+
 /* Mobile styles */
 @media (max-width: 768px) {
   .footer {
@@ -1128,6 +1262,48 @@ section {
   letter-spacing: 1px;
 }
 
+@media (min-width: 1025px) and (max-width: 1200px) {
+
+  #aboutus {
+    height: 96vh;
+    background-position: center;
+  }
+
+  #aboutus .about-titles {
+    justify-items: left;
+    padding-top: 160px;
+  }
+
+  #aboutus .about-titles .title-container {
+    padding-top: 100px;
+    padding-left: 50px;
+  }
+
+  #aboutus .about-titles .title-container .abouttitle h2 {
+    font-size: 42px;
+  }
+
+  #aboutus .about-titles .aboutsub_title {
+    padding-right: 10px;
+    font-size: 23px;
+    padding-left: 50px;
+
+
+  }
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
 /* Mobile styles */
 @media (max-width: 768px) {
   #aboutus {
@@ -1189,6 +1365,8 @@ section {
   font-weight: 500;
 }
 
+
+
 /* Mobile styles */
 @media (max-width: 768px) {
   #about-vision {
@@ -1247,6 +1425,28 @@ section {
   text-align: right;
   justify-items: right;
   padding-left: 800px;
+
+}
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+
+  #about-mission .mission-container h2 {
+    padding-left: 100px;
+    font-weight: 500;
+  }
+
+  #about-mission .mission-container {
+    color: #003844;
+    justify-items: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 400;
+    padding-left: 150px;
+    padding-right: 110px;
+    padding-top: 60px;
+    word-spacing: 15px;
+    width: 800px;
+  }
 
 }
 
@@ -1328,6 +1528,31 @@ section {
 
 #about-objectives .Objectives-container .Objectives-innercontainer .Objectives-container-paragraph p {
   padding: 10px;
+}
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+
+  /* ============ OBJECTIVES SECTION ============ */
+  #about-objectives {
+    height: auto;
+    padding: 60px 40px;
+    background-position: 120%;
+    background-image: none;
+  }
+
+  #about-objectives .Objectives-container {
+    font-size: 24px;
+    padding: 20px;
+  }
+
+  #about-objectives .Objectives-container .Objectives-innercontainer h2 {
+    font-size: 32px;
+    padding: 20px;
+  }
+
+  #about-objectives .Objectives-container .Objectives-innercontainer .Objectives-container-paragraph {
+    padding: 20px;
+  }
 }
 
 
@@ -1516,6 +1741,50 @@ section {
   border-color: #dbdbdb;
 }
 
+@media (min-width: 1200px) and (max-width: 1500px) {
+  #about-approach .approach-container .approachimage-container .approachimage-innercontainer .approachimageflex .approachimage2 {
+
+    top: 660%;
+  }
+}
+
+@media (min-width: 1500px) and (max-width: 1490px) {
+  #about-approach .approach-container .approachimage-container .approachimage-innercontainer .approachimageflex .approachimage2 {
+    display: none;
+  }
+
+
+}
+
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+  #about-approach {
+
+    height: 120vh;
+
+  }
+
+  #about-approach .approach-container .approach-details .approach-details-paragraph1 {
+    font-size: 22px;
+    font-weight: 300;
+  }
+
+  #about-approach .approach-container .approach-details .approach-details-paragraph2 {
+    font-size: 22px;
+    padding-top: 20px;
+    padding-right: 80px;
+    font-weight: 300;
+  }
+
+  #about-approach .approach-container .approachimage-container .approachimage-innercontainer .approachimageflex .approachimage2 {
+    position: absolute;
+    top: 645%;
+    left: 67%;
+    z-index: 2;
+  }
+
+}
+
 /* Mobile styles */
 @media (max-width: 768px) {
   #about-approach {
@@ -1585,6 +1854,8 @@ section {
 
 
 
+
+
 #about-advocacy {
   height: 300px;
   background-color: #003844;
@@ -1592,6 +1863,15 @@ section {
 
   background-repeat: no-repeat;
   background-position: -60%;
+}
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+  #about-advocacy {
+
+    background-color: #003844;
+    background-image: none;
+  }
+
 }
 
 #about-advocacy .about-advocacy-title {
@@ -1651,6 +1931,15 @@ section {
   font-size: 45px;
   margin-top: 30px;
   margin-left: 110px;
+
+}
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+  #meet-the-team {
+
+    height: 370vh;
+  }
+
 
 }
 
@@ -2139,8 +2428,10 @@ section {
   justify-items: center;
   width: 100%;
   background-color: #364b5b;
+  height: 880px;
 
 }
+
 
 
 
@@ -2300,6 +2591,22 @@ section {
 
 .button input[type="button"]:hover {
   background: #5029bc;
+}
+
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+  #contactusform {
+
+    height: 900px;
+  }
+
+}
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+  #contactusform {
+
+    height: 900px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -2569,6 +2876,44 @@ section {
   background-color: rgba(255, 255, 255, 0.8);
 }
 
+@media (min-width: 1025px) and (max-width: 1200px) {
+  #testimonials {
+    height: 400vh;
+    padding: 50px 0;
+  }
+
+  #testimonials h2 {
+    font-size: 42px;
+    padding: 20px;
+  }
+
+  .carousel {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .carousel-item {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .carousel-item img {
+    margin-right: 0;
+    margin-bottom: 20px;
+    width: 250px;
+    height: auto;
+  }
+
+  .carousel-item .content p {
+    width: 100%;
+    font-size: 18px;
+  }
+
+  .testimonialimages {
+    display: none;
+  }
+}
+
 /* Mobile styles */
 @media (max-width: 768px) {
 
@@ -2719,6 +3064,14 @@ section {
 
 .carousel1-button:hover {
   background-color: rgba(255, 255, 255, 0.8);
+}
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+
+  .carousel1 {
+    display: none;
+  }
+
 }
 
 @media (max-width: 768px) {
