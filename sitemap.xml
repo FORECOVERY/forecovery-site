@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <url>
+       <loc>https://recoveryuganda.com/</loc>
+       <lastmod>2025-04-12T06:47:02+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>1.0000</priority>
+  </url>
+  <url>
+       <loc>https://recoveryuganda.com/index.html</loc>
+       <lastmod>2025-04-12T06:47:02+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://recoveryuganda.com/about.html</loc>
+       <lastmod>2025-04-12T06:47:02+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://recoveryuganda.com/blog.html</loc>
+       <lastmod>2025-04-12T06:47:02+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://recoveryuganda.com/contact1.html</loc>
+       <lastmod>2025-04-12T06:47:02+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://recoveryuganda.com/blog-details.html</loc>
+       <lastmod>2025-04-12T06:47:02+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+</urlset>

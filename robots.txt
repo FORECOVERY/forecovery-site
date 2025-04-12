@@ -1,0 +1,19 @@
+User-agent: *
+Allow: /
+Disallow: /404.html
+Disallow: /README.md
+Disallow: /LICENSE
+Disallow: /CONTRIBUTING.md
+Disallow: /docs/  
+Disallow: /_config.yml  
+Disallow: /assets/
+Disallow: /_posts/
+Disallow: /_layouts/
+
+User-agent: Googlebot 
+Disallow: 
+
+User-agent: bingbot 
+Disallow: /not-for-bing/ 
+
+Sitemap: https://www.recoveryuganda.com/sitemap.xml
